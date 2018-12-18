@@ -177,7 +177,6 @@ let annotate_tail_calls e = aux_param_annotate_tail_calls e false;;
 let box_set e = raise X_not_yet_implemented;;
 
 let run_semantics expr =
-  box_set
     (annotate_tail_calls
        (annotate_lexical_addresses expr));;
   
